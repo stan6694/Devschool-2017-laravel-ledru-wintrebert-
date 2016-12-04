@@ -13,7 +13,13 @@ class UpdateEventsTable extends Migration
     public function up()
     {
         Schema::table('events', function (Blueprint $table) {
-
+            $table->string('nom');
+            $table->string('description');
+            $table->string('date_debut');
+            $table->string('date_fin');
+            $table->string('lieu');
+            $table->string('tarif');
+            $table->string('organisateur');
         });
     }
 

@@ -12,7 +12,7 @@ class UpdatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::table('events', function (Blueprint $table) {
+        Schema::table('posts', function (Blueprint $table) {
             $table->integer('user_id');
         });
     }
