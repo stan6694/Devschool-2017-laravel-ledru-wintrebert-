@@ -10,13 +10,7 @@
                 <div class="panel-body">
                     <strong>liste des articles</strong>
 
-                    @if(count($articles) === 1)
 
-                        @foreach ($articles as $article)
-                            <p>Titre : {{ $article->title }}</p>
-                        @endforeach
-
-                    @endif
 
                 </div>
             </div>
