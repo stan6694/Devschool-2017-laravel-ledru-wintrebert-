@@ -1,10 +1,4 @@
 @extends('layouts.app')
-<<<<<<< HEAD
-@section('main')
-    <h1>Bonjour</h1>
-    <p>description</p>
-@endsection
-=======
 
 @section('content')
 <div class="container">
@@ -14,9 +8,15 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
+                    <strong>liste des articles</strong>
 
+                    @if(count($articles) === 1)
 
+                        @foreach ($articles as $article)
+                            <p>Titre : {{ $article->title }}</p>
+                        @endforeach
 
+                    @endif
 
                 </div>
             </div>
@@ -24,4 +24,3 @@
     </div>
 </div>
 @endsection
->>>>>>> origin/master
