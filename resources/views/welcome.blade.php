@@ -8,14 +8,11 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    git c'est de la merde
-                    git c'est vraiment à chier
-                    git c'est vraiment à chier
-                    git c'est vraiment à chier
-                    git c'est vraiment à chier
-                    git c'est vraiment à chier
-                    git c'est vraiment à chier
-                    git c'est vraiment à chier
+        gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
+                    gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
+                    gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
+                    gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
+
 
 
 
