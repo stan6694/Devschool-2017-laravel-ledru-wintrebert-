@@ -9,7 +9,7 @@
 
                 <div class="panel-body">
 
-
+                    test eraser push
 
                 </div>
             </div>
