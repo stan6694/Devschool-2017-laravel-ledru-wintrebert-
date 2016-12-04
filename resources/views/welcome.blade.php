@@ -1,10 +1,4 @@
 @extends('layouts.app')
-<<<<<<< HEAD
-@section('main')
-    <h1>Bonjour</h1>
-    <p>description</p>
-@endsection
-=======
 
 @section('content')
 <div class="container">
@@ -14,14 +8,10 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-
-
-
-
+                    Your Application's Landing Page.
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
->>>>>>> origin/master
