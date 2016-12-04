@@ -8,12 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-        gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
-                    gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
-                    gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
-                    gurehgureguirezhugilrezhugizehugilhrzeuilhurzeilghurzeilhglreizhgureilzhgurzeilhe
-
-
+       
 
 
 
