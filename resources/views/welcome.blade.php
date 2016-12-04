@@ -39,7 +39,6 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
-                bla bla bla numero 3 theo
             </div>
         </div>
     </body>
