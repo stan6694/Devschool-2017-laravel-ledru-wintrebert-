@@ -8,7 +8,20 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
+<<<<<<< HEAD
                     Your Application's Landing Page.
+=======
+                    <strong>liste des articles</strong>
+
+                    @if(count($articles) === 1)
+
+                        @foreach ($articles as $article)
+                            <p>Titre : {{ $article->title }}</p>
+                        @endforeach
+
+                    @endif
+
+>>>>>>> a371d62243f0e76c100858d8cc6a17f9aa7b589f
                 </div>
             </div>
         </div>
