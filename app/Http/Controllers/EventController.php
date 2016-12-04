@@ -47,8 +47,8 @@ class EventController extends Controller
                 'description' => 'required|min:20',
                 'date de debut' => 'required|min:6',
                 'date de fin' => 'required|min:6',
-                'lieu' => 'required|min:6',
-                'tarif' => 'required|min:6'
+                'lieu' => 'required',
+                'tarif' => 'required|min:2'
             ],
             [
                 'nom.required' => 'nom requis',
@@ -59,7 +59,7 @@ class EventController extends Controller
                 'date de debut.min' => 'la date de debut doit faire au moins 6 caracteres',
                 'lieu.required' => 'lieu requise',
                 'tarif.required' => 'tarif requis',
-                'tarif.min' => 'le tarif doit faire au moins 6 caracteres'
+                'tarif.min' => 'le tarif doit faire au moins 2 caracteres'
 
             ]);
 
