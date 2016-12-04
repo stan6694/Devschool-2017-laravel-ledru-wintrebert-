@@ -8,6 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
+<<<<<<< HEAD
 
                     Your Application's Landing Page.
 
@@ -16,6 +17,10 @@
 
 
 
+=======
+                    Your Application's Landing Page.
+                    <strong>liste des articles</strong>
+>>>>>>> e087156499d06ac19c13553451cf007bbac3b7a6
                 </div>
             </div>
         </div>
