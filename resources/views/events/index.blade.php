@@ -8,7 +8,15 @@
                 <div class="panel-heading">listes des events</div>
                 <div class="panel-body">
 
-                    liste des articles
+                    liste des events
+
+                    @foreach($events as $event)
+                        <div>
+
+                            {{ route('$event.show', $event->id) }}
+
+                        </div>
+                    @endforeach
 
                 </div>
               </div>
