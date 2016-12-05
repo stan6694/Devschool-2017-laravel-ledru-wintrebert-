@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('posts.index');
     }
 
     /**
@@ -23,6 +23,7 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function create()
     {
         //
@@ -47,7 +48,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('create');
     }
 
     /**

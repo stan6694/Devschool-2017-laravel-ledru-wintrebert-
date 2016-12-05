@@ -15,20 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/posts', function () {
-
-    return view('posts');
-});
-
-Route::get('/events/create', function () {
-    return view('events');
-
-});
-
-Route::auth();
+Route::Auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::auth();
+Route::resource('/event', 'EventController');
 
-Route::get('/home', 'HomeController@index');
+Route::resource('/posts', 'PostController');
+
+
+
