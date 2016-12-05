@@ -8,7 +8,7 @@
                     <div class="panel-heading">listes des posts</div>
                     <div class="panel-body">
 
-                        index posts
+
 
 
 

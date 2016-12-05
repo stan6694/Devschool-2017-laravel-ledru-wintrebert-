@@ -10,8 +10,6 @@
 
                     liste des articles
 
-
-
                 </div>
               </div>
             </div>
