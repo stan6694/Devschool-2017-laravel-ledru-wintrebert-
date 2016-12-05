@@ -19,6 +19,10 @@ Route::get('/posts', function () {
     return view('posts');
 });
 
+Route::get('/events/create', function () {
+    return view('events');
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
