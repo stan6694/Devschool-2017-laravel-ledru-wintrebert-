@@ -16,8 +16,18 @@ Route::get('/', function () {
 });
 
 Route::Auth();
+
 Route::resource('/events', 'EventController');
+
+Route::resource('/posts', 'PostController');
 
 Route::get('/home', 'HomeController@index');
 
 ?>
+
+
+
+
+
+
+
