@@ -26,18 +26,17 @@
                         ['class' => 'form-control',
                         'placeholder' => 'Description']) !!}
 
-                        {!! Form::label('date de debut','Date de debut') !!}
+                        {!! Form::label('date_de_debut','Date_de_debut') !!}
 
-
-                        {!! Form::text('date de debut', null,
+                        {!! Form::text('date_de_debut', null,
                         ['class' => 'form-control',
-                        'placeholder' => 'Date de debut']) !!}
+                        'placeholder' => 'Date_de_debut']) !!}
 
-                        {!! Form::label('date de fin','Date de fin') !!}
+                        {!! Form::label('date_de_fin','Date_de_fin') !!}
 
-                        {!! Form::text('date de fin', null,
+                        {!! Form::text('date_de_fin', null,
                         ['class' => 'form-control',
-                        'placeholder' => 'Date de fin']) !!}
+                        'placeholder' => 'Date_de_fin']) !!}
 
                         {!! Form::label('lieu','Lieu') !!}
 
