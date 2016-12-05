@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -10,21 +9,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::Auth();
-
 Route::resource('/events', 'EventController');
-
 Route::resource('/posts', 'PostController');
-
 Route::get('/home', 'HomeController@index');
-
-?>
-
-
-
-
