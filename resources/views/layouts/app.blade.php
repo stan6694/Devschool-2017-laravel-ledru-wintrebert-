@@ -49,6 +49,9 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('/posts') }}">Les articles</a></li>
+                    <li><a href="{{ route('posts.create') }}">Créer un article</a></li>
+                    <li><a href="{{ url('/events') }}">Les évènements</a></li>
+                    <li><a href="{{ route('events.create') }}">Créer un évènement</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
