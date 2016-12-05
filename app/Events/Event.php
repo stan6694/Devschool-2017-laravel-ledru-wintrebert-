@@ -2,7 +2,7 @@
 
 namespace App\Events;
 
-abstract class EventController
+abstract class Event
 {
 
 }
