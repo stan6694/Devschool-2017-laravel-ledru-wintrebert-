@@ -6,6 +6,7 @@ use App\Events\Event;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -40,33 +41,11 @@ class EventController extends Controller
     public function store(Request $request)
     {
         //enregistre le formulaire de creation d'events
-        $this->validate($request,
-            [
-                'nom' => 'required|min:6',
-                'description' => 'required|min:20',
-                'date_de_debut' => 'required|min:6',
-                'date_de_fin' => 'required|min:6',
-                'lieu' => 'required',
-                'tarif' => 'required|min:2'
-            ],
-            [
-                'nom.required' => 'nom requis',
-                'nom.min' => 'le titre doit faire au moins 6 caracteres',
-                'description.required' => 'description requise',
-                'description.min' => 'la description doit faire au moins 20 caracteres',
-                'date_de_debut.required' => 'date de debut requise',
-                'date_de_debut.min' => 'la date de debut doit faire au moins 6 caracteres',
-                'lieu.required' => 'lieu requise',
-                'tarif.required' => 'tarif requis',
-                'tarif.min' => 'le tarif doit faire au moins 2 caracteres'
-
-            ]);
 
         $event = new Event;
         $input = $request->input();
         $input['organisateur'] = Auth::user()->id;
         $event->fill($input)->save();
-
 
 
         return redirect()

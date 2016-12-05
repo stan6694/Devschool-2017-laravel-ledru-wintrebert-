@@ -13,7 +13,7 @@
                     @foreach($events as $event)
                         <div>
 
-                            {{ route('$event.show', $event->id) }}
+
 
                         </div>
                     @endforeach
