@@ -19,6 +19,7 @@ class CreateEventsTable extends Migration
             $table->string('date_de_debut');
             $table->string('date_de_fin');
             $table->string('lieu');
+            $table->string('tarif');
             $table->integer('organisateur');
             $table->timestamps();
         });
