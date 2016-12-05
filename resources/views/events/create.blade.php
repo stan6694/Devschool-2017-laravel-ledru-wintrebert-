@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">creer des trucs</div>
+                    <div class="panel-heading">creer des event</div>
                     <div class="panel-body">
                         {{--afficher le formulaire de creation d'article--}}
 

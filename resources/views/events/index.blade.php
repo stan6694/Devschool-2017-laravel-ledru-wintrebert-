@@ -8,7 +8,7 @@
                 <div class="panel-heading">listes des events</div>
                 <div class="panel-body">
 
-                    index event
+                    liste des articles
 
 
 
