@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\Event;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -15,8 +16,6 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::paginate(10);
-
         //lister les events
         return view('events.index', compact('events'));
     }

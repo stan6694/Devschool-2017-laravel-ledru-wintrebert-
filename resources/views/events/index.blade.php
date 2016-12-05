@@ -8,12 +8,10 @@
                 <div class="panel-heading">listes des events</div>
                 <div class="panel-body">
 
-                <?php foreach ($events as $event): ?>
-                    <a href="{{ route('event.show', $post->id) }}" rel="stylesheet"><h2>{{ $event->title }}</h2></a>
-                    <p>{{ $event->content }}</p>
+                    index event
 
-                  <?php endforeach; ?>
-                  {{ $events->links() }}
+
+
                 </div>
               </div>
             </div>
