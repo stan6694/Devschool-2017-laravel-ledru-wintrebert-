@@ -26,6 +26,30 @@
                         ['class' => 'form-control',
                         'placeholder' => 'Description']) !!}
 
+                        {!! Form::label('date_de_debut','Date_de_debut') !!}
+
+                        {!! Form::text('date_de_debut', null,
+                        ['class' => 'form-control',
+                        'placeholder' => 'Date_de_debut']) !!}
+
+                        {!! Form::label('date_de_fin','Date_de_fin') !!}
+
+                        {!! Form::text('date_de_fin', null,
+                        ['class' => 'form-control',
+                        'placeholder' => 'Date_de_fin']) !!}
+
+                        {!! Form::label('lieu','Lieu') !!}
+
+                        {!! Form::text('lieu', null,
+                        ['class' => 'form-control',
+                        'placeholder' => 'Lieu']) !!}
+
+                        {!! Form::label('tarif','Tarif') !!}
+
+                        {!! Form::text('tarif', null,
+                        ['class' => 'form-control',
+                        'placeholder' => 'Tarif']) !!}
+
                         {!! Form::submit('publier') !!}
 
                         {!! Form::close() !!}
