@@ -58,5 +58,5 @@
                 </div>
             </div>
         </div>
-    </div> afficher le formulaire de creation de l'evenement
+    </div>
 @endsection

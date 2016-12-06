@@ -18,7 +18,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('posts.show');
+        $list = Post::orderBy('id','desc') ->paginate(10);
+
+        return view('posts.index', compact('list'));
     }
 
     /**
@@ -59,6 +61,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
+        $post = Post::findOrFail($id);
+        return view('posts.show', compact('post'));
     }
 
     /**
@@ -92,6 +96,11 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $post->delete();
+
+        return redirect()
+            ->route('posts.index')
+            ->with('success', 'l evenemnt a été supprimé');
     }
 }

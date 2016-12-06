@@ -8,7 +8,14 @@
                     <div class="panel-heading">listes des posts</div>
                     <div class="panel-body">
 
-
+                        @foreach($list as $post)
+                            <h2>
+                                <a href="{{ route('posts.show', $post->id) }}">
+                                    {{ $post->titre }}
+                                </a>
+                            </h2>
+                            <p>{{ $post->contenu }}</p>
+                        @endforeach
 
 
 

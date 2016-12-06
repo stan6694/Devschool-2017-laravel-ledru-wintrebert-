@@ -10,19 +10,12 @@
 
                     liste des events
 
-                    @foreach($events as $event)
-                        <div>
 
                             <a href="{{ route('events.show', $event->id) }}">
                                 {{ $event->nom }}
                             </a>
                             </h2>
                             <p>description : {{ $event->description }}</p>
-
-
-
-                        </div>
-                    @endforeach
 
                 </div>
               </div>
