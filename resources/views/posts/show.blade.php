@@ -31,7 +31,6 @@
                             {!! ! Form::close() !!}
 
                         @endif
-
                         
                         <br>
                         <br>
