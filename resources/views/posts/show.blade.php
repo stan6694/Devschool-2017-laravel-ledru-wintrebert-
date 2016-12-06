@@ -32,6 +32,7 @@
 
                         @endif
 
+                        
                         <br>
                         <br>
                         <a class ="btn btn-primary" href="{{ route('posts.index') }}"> Tous les articles </a>
