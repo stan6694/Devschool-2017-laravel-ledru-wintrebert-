@@ -13,7 +13,6 @@
                           'route' => 'events.store',
                           'method' => 'POST' )) !!}
 
-
                         {!! Form::label('nom','Nom') !!}
 
                         {!! Form::text('nom', null,

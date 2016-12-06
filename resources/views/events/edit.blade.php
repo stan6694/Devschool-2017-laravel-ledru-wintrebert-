@@ -8,11 +8,10 @@
                     <div class="panel-heading">editer des event</div>
                     <div class="panel-body">
                         {!! Form::model(
-                        $post,
+                        $event,
                         array(
-                         'route' => array('post.update', $post->id),
-                         'method' => 'PUT' ))
-                         !!}
+                         'route' => array('event.update', $->id),
+                         'method' => 'PUT' )) !!}
 
                         {!! Form::label('nom','Nom') !!}
 
@@ -50,7 +49,7 @@
                         ['class' => 'form-control',
                         'placeholder' => 'Tarif']) !!}
 
-                        {!! Form::submit('publier') !!}
+                        {!! Form::submit('modifier') !!}
 
                         {!! Form::close() !!}
                     </div>
