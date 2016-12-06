@@ -8,9 +8,15 @@
                 <div class="panel-heading">listes des events</div>
                 <div class="panel-body">
 
-                    liste des articles
+                    liste des events
+
+                    @foreach($events as $event)
+                        <div>
 
 
+
+                        </div>
+                    @endforeach
 
                 </div>
               </div>

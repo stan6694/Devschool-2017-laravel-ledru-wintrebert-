@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\Event;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -39,6 +40,7 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
 
 
         $post = new Post;
@@ -47,6 +49,16 @@ class EventController extends Controller
         $post->fill($input)->save();
 
 
+=======
+        //enregistre le formulaire de creation d'events
+
+        $event = new Event;
+        $input = $request->input();
+        $input['organisateur'] = Auth::user()->id;
+        $event->fill($input)->save();
+
+
+>>>>>>> dc0b2af2ccb34a4d59ce78de0a5bb25ac8189058
         return redirect()
             ->route('posts.index')
             ->with('success', 'l\'article a bien été ajouté');

@@ -10,7 +10,7 @@
                         {{--afficher le formulaire de creation d'article--}}
 
                         {!! Form::open(array(
-                          'route' => 'event.store',
+                          'route' => 'events.store',
                           'method' => 'POST' )) !!}
 
 
@@ -27,6 +27,7 @@
                         'placeholder' => 'Description']) !!}
 
                         {!! Form::label('date_de_debut','Date_de_debut') !!}
+
 
                         {!! Form::text('date_de_debut', null,
                         ['class' => 'form-control',
@@ -57,6 +58,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    afficher le formulaire de creation de l'evenement
+    </div> afficher le formulaire de creation de l'evenement
 @endsection

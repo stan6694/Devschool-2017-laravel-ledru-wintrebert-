@@ -6,7 +6,6 @@ use App\Models\Post;
 
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use Illuminate\Support\Facades\Auth;
 
@@ -60,7 +59,6 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        return view('create');
     }
 
     /**

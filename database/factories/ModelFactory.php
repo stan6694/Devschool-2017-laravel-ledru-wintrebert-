@@ -23,7 +23,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Event::class, function (Faker\Generator $faker) {
     return [
         'nom' => $faker->nom,
-        'description' => $faker->safeEmail,
+        'description' => $faker->description,
         'password' => bcrypt(str_random(10)),
         'remember_token' => str_random(10),
     ];
