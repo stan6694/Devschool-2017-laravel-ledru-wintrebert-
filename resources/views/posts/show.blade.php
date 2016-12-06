@@ -16,21 +16,19 @@
 
                         @if(Auth::check() )
 
-                            <a class ="btn btn-success" href="{{ route('posts.index'),$post->id }}">Modifier</a>
+                            <a class ="btn btn-success" href="{{ route('posts.edit'),$post->id }}">Modifier</a>
                             <br>
                             <br>
                             {!! Form::model(
 
                                         $post,
                                         array(
-                                        'route' => array( 'posts.destroy', $post->id),
+                                        'route' => array( 'posts.edit', $post->id),
                                         'method' => 'DELETE')) !!}
 
                             {!! Form::submit('Supprimer article',
                             ['class' => 'btn btn-danger']) !!}
                             {!! ! Form::close() !!}
-
-
 
                         @endif
 
