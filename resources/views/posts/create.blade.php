@@ -16,7 +16,7 @@
 
                         {!! Form::label('titre','Titre') !!}
 
-                        {!! Form::text('nom', null,
+                        {!! Form::text('titre', null,
                         ['class' => 'form-control',
                         'placeholder' => 'Titre']) !!}
 

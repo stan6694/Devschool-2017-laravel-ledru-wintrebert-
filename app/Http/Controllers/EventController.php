@@ -41,13 +41,10 @@ class EventController extends Controller
     public function store(Request $request)
     {
 
-
-
-        $post = new Event;
+        $event = new Event;
         $input = $request->input();
         $input['user_id'] = Auth::user()->id;
-        $post->fill($input)->save();
-
+        $event->fill($input)->save();
 
 
         //enregistre le formulaire de creation d'events
@@ -58,10 +55,9 @@ class EventController extends Controller
         $event->fill($input)->save();
 
 
-
         return redirect()
             ->route('events.index')
-            ->with('success', 'l\'article a bien été ajouté');
+            ->with('success', 'l\'evenement a bien été ajouté');
     }
 
     /**
