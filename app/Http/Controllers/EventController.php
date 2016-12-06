@@ -43,18 +43,9 @@ class EventController extends Controller
 
         $event = new Event;
         $input = $request->input();
-        $input['user_id'] = Auth::user()->id;
-        $event->fill($input)->save();
-
-
-        //enregistre le formulaire de creation d'events
-
-        $event = new Event;
-        $input = $request->input();
         $input['organisateur'] = Auth::user()->id;
         $event->fill($input)->save();
-
-
+        
         return redirect()
             ->route('events.index')
             ->with('success', 'l\'evenement a bien été ajouté');
