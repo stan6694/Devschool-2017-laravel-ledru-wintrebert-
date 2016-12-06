@@ -18,6 +18,7 @@ class EventController extends Controller
     public function index()
     {
         //lister les events
+        $events = Event::orderBy('id','desc') ->paginate(10);
         return view('events.index', compact('events'));
     }
 
@@ -40,16 +41,6 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-
-
-
-        $post = new Event;
-        $input = $request->input();
-        $input['user_id'] = Auth::user()->id;
-        $post->fill($input)->save();
-
-
-
         //enregistre le formulaire de creation d'events
 
         $event = new Event;
