@@ -13,9 +13,6 @@
                         <p>date de fin : {{ $event->date_de_fin }}</p>
                         <p>lieu : {{ $event->lieu }}</p>
                         <p>tarif : {{ $event->tarif }}</p>
-
-
-                        {{-- HS --}}
                         <p>organisateur : {{$event->user->name}}</p>
 
                     </div>
