@@ -11,6 +11,11 @@
                     liste des events
 
 
+                            <a href="{{ route('events.show', $event->id) }}">
+                                {{ $event->nom }}
+                            </a>
+                            </h2>
+                            <p>description : {{ $event->description }}</p>
 
                 </div>
               </div>

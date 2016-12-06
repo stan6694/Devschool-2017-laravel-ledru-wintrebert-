@@ -18,6 +18,7 @@ class EventController extends Controller
     public function index()
     {
         //lister les events
+        $events = Event::orderBy('id','desc') ->paginate(10);
         return view('events.index', compact('events'));
     }
 
@@ -40,7 +41,6 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-
         $event = new Event;
         $input = $request->input();
         $input['organisateur'] = Auth::user()->id;
@@ -57,6 +57,8 @@ class EventController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
     public function show($id)
     {
         $event = Event::findOrFail($id);
