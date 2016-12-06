@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">créer un article</div>
+                    <div class="panel-heading">Créer un article</div>
                     <div class="panel-body">
                         {{--afficher le formulaire de creation d'article--}}
 
@@ -14,44 +14,23 @@
                           'method' => 'POST' )) !!}
 
 
-                        {!! Form::label('nom','Nom') !!}
+                        {!! Form::label('titre','Titre') !!}
 
                         {!! Form::text('nom', null,
                         ['class' => 'form-control',
-                        'placeholder' => 'Nom']) !!}
+                        'placeholder' => 'Titre']) !!}
 
-                        {!! Form::label('description','Description') !!}
+                        <br>
 
-                        {!! Form::textarea('description', null,
+                        {!! Form::label('contenu','Contenu') !!}
+
+                        {!! Form::textarea('contenu', null,
                         ['class' => 'form-control',
-                        'placeholder' => 'Description']) !!}
+                        'placeholder' => 'Contenu']) !!}
 
-                        {!! Form::label('date de debut','Date de debut') !!}
+                        <br>
 
-
-                        {!! Form::text('date de debut', null,
-                        ['class' => 'form-control',
-                        'placeholder' => 'Date de debut']) !!}
-
-                        {!! Form::label('date de fin','Date de fin') !!}
-
-                        {!! Form::text('date de fin', null,
-                        ['class' => 'form-control',
-                        'placeholder' => 'Date de fin']) !!}
-
-                        {!! Form::label('lieu','Lieu') !!}
-
-                        {!! Form::text('lieu', null,
-                        ['class' => 'form-control',
-                        'placeholder' => 'Lieu']) !!}
-
-                        {!! Form::label('tarif','Tarif') !!}
-
-                        {!! Form::text('tarif', null,
-                        ['class' => 'form-control',
-                        'placeholder' => 'Tarif']) !!}
-
-                        {!! Form::submit('creer') !!}
+                        {!! Form::submit('Publier') !!}
 
                         {!! Form::close() !!}
                     </div>
@@ -59,5 +38,4 @@
             </div>
         </div>
     </div>
-    afficher le formulaire de creation de l'evenement
 @endsection
