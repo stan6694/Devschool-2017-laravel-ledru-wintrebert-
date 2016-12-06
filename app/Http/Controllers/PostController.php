@@ -18,7 +18,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('posts.show');
+        $list = Post::orderBy('id','desc') ->paginate(10);
+
+        return view('posts.index', compact('list'));
     }
 
     /**
@@ -59,6 +61,7 @@ class PostController extends Controller
      */
     public function show($id)
     {
+
     }
 
     /**

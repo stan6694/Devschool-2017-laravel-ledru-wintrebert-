@@ -10,14 +10,7 @@
 
                     liste des events
 
-                    @foreach($events as $event)
-                        <div>
 
-
-
-
-                        </div>
-                    @endforeach
 
                 </div>
               </div>

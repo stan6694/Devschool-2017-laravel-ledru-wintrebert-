@@ -45,7 +45,7 @@ class EventController extends Controller
         $input = $request->input();
         $input['organisateur'] = Auth::user()->id;
         $event->fill($input)->save();
-        
+
         return redirect()
             ->route('events.index')
             ->with('success', 'l\'evenement a bien été ajouté');
