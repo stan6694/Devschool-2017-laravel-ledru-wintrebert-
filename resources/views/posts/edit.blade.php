@@ -7,7 +7,6 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Modifier un article</div>
                     <div class="panel-body">
-                        {{--afficher le formulaire de creation d'article--}}
 
                         {!! Form::model(
                         $post,
