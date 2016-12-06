@@ -11,7 +11,7 @@
                         {{ $post->contenu }}
                         <br>
                         Auteur : {{$post->user->name}}
-
+                        <br>
                         <br>
 
                         @if(Auth::check() )
@@ -34,7 +34,9 @@
 
                         @endif
 
-                        <a class ="btn btn-success" href="{{ route('posts.index') }}"> Tous les articles </a>
+                        <br>
+                        <br>
+                        <a class ="btn btn-primary" href="{{ route('posts.index') }}"> Tous les articles </a>
 
                     </div>
                 </div>
