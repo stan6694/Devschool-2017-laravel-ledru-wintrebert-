@@ -89,10 +89,10 @@ class PostController extends Controller
     {
         $post = Post::findOrFail($id);
         $input = $request->input();
-        $post->fill($input)-save();
+        $post->fill($input)->save();
 
         return redirect()
-            ->route('posts.index')
+            ->route('posts.index', $id)
             ->with('success', "larticle a ete mis a jour");
     }
 

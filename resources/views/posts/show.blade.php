@@ -16,14 +16,14 @@
 
                         @if(Auth::check() )
 
-                            <a class ="btn btn-success" href="{{ route('posts.edit'),$post->id }}">Modifier</a>
+                            <a class ="btn btn-success" href="{{ route('posts.edit',$post->id)}}">Modifier</a>
                             <br>
                             <br>
                             {!! Form::model(
 
                                         $post,
                                         array(
-                                        'route' => array( 'posts.edit', $post->id),
+                                        'route' => array( 'posts.destroy', $post->id),
                                         'method' => 'DELETE')) !!}
 
                             {!! Form::submit('Supprimer article',
