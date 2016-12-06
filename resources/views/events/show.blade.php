@@ -17,7 +17,7 @@
 
                         <a class ="btn btn-success" href="{{route('events.edit',$event->id)}}">Modifier l'evenement</a>
 
-                        {!! Form::model($event, array('route' => array('events.edit', $event->id),'method' => 'DELETE')) !!}
+                        {!! Form::model($event, array('route' => array('events.destroy', $event->id),'method' => 'DELETE')) !!}
 
                         {!! Form::submit('Supprimer l\'evenement', ['class' => 'btn btn-danger']) !!}
 

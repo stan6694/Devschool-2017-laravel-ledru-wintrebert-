@@ -10,7 +10,7 @@
                         {!! Form::model(
                         $event,
                         array(
-                         'route' => array('event.update', $->id),
+                         'route' => array('events.update', $event->id),
                          'method' => 'PUT' )) !!}
 
                         {!! Form::label('nom','Nom') !!}

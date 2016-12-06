@@ -98,7 +98,7 @@ class EventController extends Controller
         $input = $request->input();
         $event->fill($input)->save();
 
-        return redirect()->route('event.show', $id)
+        return redirect()->route('events.show', $id)
             ->with('success', 'l\'evenement a bien été modifié');
 
     }
@@ -116,7 +116,7 @@ class EventController extends Controller
         $event->delete();
 
         return redirect()
-            ->route('event.index')
+            ->route('events.index')
             ->with('success', 'l\'evenement a bien été supprimé');
     }
 }
