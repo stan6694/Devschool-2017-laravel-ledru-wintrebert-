@@ -79,7 +79,7 @@ class EventController extends Controller
         //affiche le formulaire d'edition de l'evenement
         $event = Event::findOrFail($id);
 
-        return view('events.edit', compact('events'));
+        return view('events.edit', compact('event'));
 
     }
 
