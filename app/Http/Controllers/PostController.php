@@ -47,7 +47,7 @@ class PostController extends Controller
         $post->fill($input)->save();
 
         return redirect()
-            ->route('post.index')
+            ->route('posts.index')
             ->with('success', 'L\'article a bien été ajouté');
     }
 
