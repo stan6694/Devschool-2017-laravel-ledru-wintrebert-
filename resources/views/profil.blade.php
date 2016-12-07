@@ -8,36 +8,26 @@
                     <div class="panel-heading">profil</div>
 
                     <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-6">
 
-                                @foreach($events as $event)
-                                    <div>
-                                        <a href="{{ route('events.show', $event->id) }}">
-                                            {{ $event->nom }}
-                                        </a>
-                                        </h2>
-                                        <p>description : {{ $event->description }}</p>
-                                    </div>
-                                @endforeach
 
-                            </div>
-                            <div class="col-md-6">
+                        @foreach($events as $event)
 
-                                @foreach($list as $post)
-                                    <h2>
-                                        <a href="{{ route('posts.show', $post->id) }}">
-                                            {{ $post->titre }}
-                                        </a>
-                                    </h2>
-                                    <p>{{ $post->contenu }}</p>
-                                @endforeach
+                            <a href="{{ route('events.show', $event->id) }}">
+                                {{ $event->nom }}
+                            </a>
+                            </h2>
+                            <p>description : {{ $event->description }}</p>
 
-                            </div>
-                        </div>
+                        @endforeach
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 @endsection
