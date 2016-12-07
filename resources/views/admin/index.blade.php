@@ -15,9 +15,21 @@
                                 </a>
                             </h2>
                             <p>{{ $post->contenu }}</p>
+
+
+                            <div>
+
+                                <a href="{{ route('events.show', $event->id) }}">
+                                    {{ $event->nom }}
+                                </a>
+                                <p>description : {{ $event->description }}</p>
+
+                            </div>
+
+                            {!! $list->links() !!}
+
                         @endforeach
 
-                        {!! $list->links() !!}
 
 
 
