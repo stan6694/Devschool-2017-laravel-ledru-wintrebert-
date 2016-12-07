@@ -13,8 +13,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::Auth();
 Route::resource('/events', 'EventController');
 Route::resource('/posts', 'PostController');
+Route::resource('/profil', 'ProfilController');
+Route::resource('/admin', 'AdminController');
 Route::get('/home', 'HomeController@index');
 

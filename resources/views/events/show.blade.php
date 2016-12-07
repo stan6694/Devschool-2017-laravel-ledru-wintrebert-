@@ -16,10 +16,14 @@
                         <p>organisateur : {{$event->user->name}}</p>
 
                         <a class ="btn btn-success" href="{{route('events.edit',$event->id)}}">Modifier l'evenement</a>
-
+                        <br>
+                        <br>
                         {!! Form::model($event, array('route' => array('events.destroy', $event->id),'method' => 'DELETE')) !!}
 
                         {!! Form::submit('Supprimer l\'evenement', ['class' => 'btn btn-danger']) !!}
+                        <br>
+                        <br>
+                        <a class ="btn btn-primary" href="{{ route('events.index') }}"> Tous les articles </a>
 
                     </div>
                 </div>
