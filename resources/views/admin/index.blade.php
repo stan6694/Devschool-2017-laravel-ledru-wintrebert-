@@ -8,30 +8,30 @@
                     <div class="panel-heading">Liste des articles</div>
                     <div class="panel-body">
 
-                        @foreach($list as $post)
+                        @foreach($post as $article)
                             <h2>
-                                <a href="{{ route('posts.show', $post->id) }}">
-                                    {{ $post->titre }}
+                                <a href="{{ route('posts.show', $article->id) }}">
+                                    {{ $article->titre }}
                                 </a>
                             </h2>
-                            <p>{{ $post->contenu }}</p>
-
-
-                            <div>
-
-                                <a href="{{ route('events.show', $event->id) }}">
-                                    {{ $event->nom }}
-                                </a>
-                                <p>description : {{ $event->description }}</p>
-
-                            </div>
-
-                            {!! $list->links() !!}
-
+                            <p>{{ $article->contenu }}</p>
                         @endforeach
 
+                            {!! $post->links() !!}
 
+                            @foreach($event as $evenement)
+                                <div>
 
+                                    <a href="{{ route('events.show', $evenement->id) }}">
+                                        {{ $evenement->nom }}
+                                    </a>
+
+                                    <p>description : {{ $evenement->description }}</p>
+
+                                </div>
+                            @endforeach
+
+                            {!! $event->links() !!}
 
                     </div>
                 </div>
