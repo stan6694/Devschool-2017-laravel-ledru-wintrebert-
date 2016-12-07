@@ -12,7 +12,7 @@
                         @foreach($events as $event)
                             <div>
 
-                                <a href="{{ route('events.show', $event->id) }}">
+                                <a href="{{ route('event.show', $event->id) }}">
                                     {{ $event->nom }}
                                 </a>
 
