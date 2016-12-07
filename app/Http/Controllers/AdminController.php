@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\Models\Post;
-use App\Models\Event;
+
+
 
 
 
@@ -21,7 +23,7 @@ class AdminController extends Controller
         $post = Post::orderBy('id','desc') ->paginate(10);
         $event = Post::orderBy('id','desc') ->paginate(10);
 
-        return view('admin.index', compact('post','event'));
+        return view('admin.index', compact('post', 'event'));
 
     }
 
